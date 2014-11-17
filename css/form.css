@@ -1,0 +1,213 @@
+/*******************************************
+				Defaults
+Remember to use something like type-scale.com 
+to get your font sizes
+*******************************************/
+*{
+	padding:0;
+	margin: 0 auto;
+    box-sizing:border-box; 
+    -moz-box-sizing: border-box;
+} 
+h1{
+    font-family:'Fondamento', cursive;
+    font-size: 2.827em;
+    padding: 1rem;
+    text-align: center;
+}
+h2{
+    font-family:'Libre Baskerville', serif;
+    padding: 0.5rem;
+    text-size: 1.414em;
+    text-align: center;
+}
+body{  
+    margin: 0 auto; 
+}
+p{
+    text-align: center;
+    margin-left:1rem;
+    padding: 0.5rem;
+}
+p, input, label{
+    font-family: 'Oxygen', sans-serif;
+    font-size: 1rem; 
+}
+
+input{
+    background-color: #FFF; 
+    -moz-box-shadow: rgba(0,0,0, 0.1) 0px 0px 8px; 
+    -webkit-box-shadow: rgba(0,0,0, 0.1) 0px 0px 8px;
+    box-shadow: rgba(0,0,0, 0.1) 0px 0px 8px;
+}
+img{
+    border: 0.125rem solid #1E4707;
+    border-top: none;
+}
+
+/*******************************************
+				Layout
+*******************************************/
+.buttons{
+    width:100%;   
+}
+.main{
+	width: 80%;
+}
+form{
+    overflow: hidden;
+    border: 0.125rem solid #1E4707;
+    border-top-left-radius: 0.75rem; 
+    border-top-right-radius: 0.75rem;
+    margin: 0 auto;  
+    background-color: #1E4707;
+}
+
+@media screen and (min-width: 500px){  
+    .formBox, .col{
+        float:left;
+        width:48%;
+        margin: 1%;
+    }
+    .buttons{
+        width:98%;  
+        margin: 1%;
+    }
+    h1{
+        font-size: 3.998em;   
+    }
+    .main{
+   
+    }
+    #slideshow{
+        display:block;   
+    }   
+    .foot{
+        background-color: #46A611;
+        max-width: 80%;
+    }
+}
+
+@media screen and (min-width: 780px){
+    .formBox{
+        float:left;
+        width:23%;
+        margin: 1%;
+    }
+    .main{
+        width: 95%;   
+    }
+    .buttons{
+        width:50%;  
+        margin-left:25.5%; 
+    }    
+    input{
+        font-size:0.7rem;   
+    }
+    h1{
+        font-size:3.998em;   
+    }
+    .foot{
+        max-width: 95%;
+    }
+    #slideshow{
+        display:block;   
+    }
+}
+
+/*******************************************
+				Form Styles
+*******************************************/
+.formBox, .col{
+	padding: 0.4rem;
+    background-color: #46A611;
+    border: solid 2px #46A611;
+    -webkit-border-radius: 0.5rem;
+    -moz-border-radius: 0.5rem;
+    border-radius: 0.5rem;
+    display: block;   
+}
+.buttons{
+	float:left;
+    padding-top: 0.5rem;
+}
+
+label{
+	
+}
+
+input[type=range]{
+    width: 100%;
+    height:1.5rem;
+}
+input[type=text],
+input[type=number],
+input[type=date]{
+	width: 100%;
+    line-height: 1.5rem  
+}
+input[type=submit],
+input[type=reset]{
+	line-height:1.5rem;
+    padding: 0.2rem;
+    font-size: 0.7rem;
+    background-image: -webkit-linear-gradient(top, #1E4707 0%, #46A611  85%);
+    background-image: -moz-linear-gradient(top, #1E4707 0%, #46A611 65%);
+}
+
+#slideshow{ 
+    position: relative;
+    margin: auto;  
+    width: 100%; 
+    clear:both;
+}
+
+#slideshow > div{
+    position: absolute;
+    top:0;
+    left:0;
+}
+    #btnReset{
+        width: 49%;
+        font-size: 1rem;
+    }
+    #btnSubmit{
+        width: 49%;
+        font-size: 1rem;        
+    }
+
+/*******************************************
+				Image Styles
+*******************************************/
+#departure, #destination {  
+    background-image: url(../img/icon/flag_green.png);
+    background-size: 17px;
+    background-repeat: no-repeat;
+    text-indent: 1.9rem;
+    background-position: 0.5rem;
+}
+#departure_dt, #return_dt{
+    background-image: url(../img/icon/calendar.png);
+    background-size: 17px;
+    background-repeat: no-repeat;
+    text-indent: 0.95rem;
+    background-position:0.5rem;
+}
+#num_adults{
+    background-image: url(../img/icon/number.png);
+    background-size: 17px;
+    background-repeat: no-repeat;
+    text-indent: 2rem;
+    background-position:0.5rem;
+}
+#price{
+    background-image: url(../img/icon/price.png);
+    background-size: 17px;
+    background-repeat: no-repeat;
+    text-indent: 4rem;
+    background-position:0.5rem;
+}
+img{
+    max-width: 100%;
+    height: auto;    
+}
