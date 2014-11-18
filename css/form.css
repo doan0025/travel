@@ -180,28 +180,28 @@ input[type=reset]{
 				Image Styles
 *******************************************/
 #departure, #destination {  
-    background-image: url(../img/icon/flag_green.png);
+    background-image: url(../img/flag_green.png);
     background-size: 17px;
     background-repeat: no-repeat;
     text-indent: 1.9rem;
     background-position: 0.5rem;
 }
 #departure_dt, #return_dt{
-    background-image: url(../img/icon/calendar.png);
+    background-image: url(../img/calendar.png);
     background-size: 17px;
     background-repeat: no-repeat;
     text-indent: 0.95rem;
     background-position:0.5rem;
 }
 #num_adults{
-    background-image: url(../img/icon/number.png);
+    background-image: url(../img/number.png);
     background-size: 17px;
     background-repeat: no-repeat;
     text-indent: 2rem;
     background-position:0.5rem;
 }
 #price{
-    background-image: url(../img/icon/price.png);
+    background-image: url(../img/price.png);
     background-size: 17px;
     background-repeat: no-repeat;
     text-indent: 4rem;
